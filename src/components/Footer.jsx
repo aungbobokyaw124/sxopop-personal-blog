@@ -15,7 +15,7 @@ export default function Footer() {
         <div style={{display:'flex',flexWrap:'wrap',justifyContent:'space-between',alignItems:'flex-start',gap:40,marginBottom:44}}>
           <div style={{maxWidth:330}}>
             <div style={{display:'flex',alignItems:'center',gap:12,marginBottom:16}}>
-              <img src="/assets/profile.webp" alt="Aung Bo Bo Kyaw" style={{width:40,height:40,borderRadius:'50%',objectFit:'cover',border:'1px solid rgba(255,255,255,.18)',background:'#111'}} />
+              <img src="/assets/profile.png" alt="Aung Bo Bo Kyaw" style={{width:40,height:40,borderRadius:'50%',objectFit:'cover',border:'1px solid rgba(255,255,255,.18)',background:'#111'}} />
               <div>
                 <div style={{fontWeight:800,fontSize:15,color:'#fff',fontFamily:'Manrope,Noto Sans Myanmar,sans-serif'}}>Aung Bo Bo Kyaw</div>
                 <div style={{fontSize:9,color:'#a1a1aa',letterSpacing:'.15em',textTransform:'uppercase',marginTop:3}}>SXOPOP Founder</div>
