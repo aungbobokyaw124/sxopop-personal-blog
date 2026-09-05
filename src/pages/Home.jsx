@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 
-const ROLES = ['Technology Creator', 'Digital Builder', 'Educator', 'Entrepreneur', 'Electronics Expert']
+const ROLES = ['Technology Builder', 'Digital Creator', 'Educator', 'Entrepreneur', 'Electronics Specialist']
 
 const CATEGORIES = [
   { en: 'Technology', mm: 'နည်းပညာ', no: '01' },
@@ -49,7 +49,7 @@ function RoleText() {
     return () => clearTimeout(timer)
   }, [role, text, deleting])
 
-  return <span className="gradient-text">{text}<span className="cursor">|</span></span>
+  return <span className="role-highlight">{text}<span className="cursor">|</span></span>
 }
 
 function SxopopMark() {
@@ -58,7 +58,7 @@ function SxopopMark() {
       <div className="mark-ring ring-one" />
       <div className="mark-ring ring-two" />
       <div className="mark-core"><span>S</span></div>
-      <div className="mark-label">INTELLIGENT<br />HUB</div>
+      <div className="mark-label">SXOPOP<br />INTELLIGENT HUB</div>
     </div>
   )
 }
@@ -88,16 +88,16 @@ export default function Home() {
         <div className="hero-glow hero-glow-two" />
         <div className="hero-inner">
           <div className="hero-copy">
-            <div className="eyebrow reveal"><span className="status-dot" /> SXOPOP Intelligent Hub <b>·</b> Myanmar</div>
-            <h1 className="hero-title reveal">Aung Bo Bo<br /><span className="gradient-text">Kyaw.</span></h1>
-            <div className="role-line reveal">I am a <RoleText /></div>
+            <div className="eyebrow reveal"><span className="status-dot" /> SXOPOP Intelligent Hub · Myanmar</div>
+            <h1 className="hero-title reveal">Aung Bo Bo Kyaw</h1>
+            <div className="role-line reveal">I build as a <RoleText /></div>
             <p className="hero-description reveal">
-              နည်းပညာကို အသုံးချပြီး အသုံးဝင်တဲ့ အရာတွေကို ဖန်တီးတည်ဆောက်နေသူ။
-              အတွေ့အကြုံ၊ project တွေနဲ့ လေ့လာသင်ယူထားတာတွေကို မျှဝေပေးတဲ့ personal hub တစ်ခုပါ။
+              နည်းပညာကို လက်တွေ့အသုံးချပြီး အသုံးဝင်သော digital products, systems နှင့် knowledge များကို ဖန်တီးတည်ဆောက်နေသူ။
+              SXOPOP Intelligent Hub သည် လက်တွေ့အတွေ့အကြုံ၊ နည်းပညာနှင့် အတွေးအမြင်များကို စုစည်းမှတ်တမ်းတင်ထားသည့် personal platform ဖြစ်ပါတယ်။
             </p>
             <div className="hero-actions reveal">
               <Link to="/about" className="btn-primary">About Me <span>↗</span></Link>
-              <Link to="/blog" className="btn-ghost">Explore the Journal <span>→</span></Link>
+              <Link to="/blog" className="btn-ghost">Read the Journal <span>→</span></Link>
             </div>
             <div className="scroll-note reveal"><span /> SCROLL TO EXPLORE</div>
           </div>
@@ -109,20 +109,20 @@ export default function Home() {
         <div className="intro-grid reveal">
           <div className="section-kicker">01 / About</div>
           <div>
-            <h2 className="section-lead">Technology is my craft.<br /><span className="muted">Building is how I learn.</span></h2>
+            <h2 className="section-lead">Technology is a tool.<br /><span className="muted">Creating useful things is the purpose.</span></h2>
             <p className="section-copy">
-              SXOPOP Intelligent Hub ကို နည်းပညာ၊ ဖန်တီးမှုနဲ့ လက်တွေ့အတွေ့အကြုံတွေ ဆုံစည်းရာနေရာအဖြစ် တည်ဆောက်ထားပါတယ်။
-              Website, AI, electronics နဲ့ digital tools တွေကို လက်တွေ့အသုံးချပြီး ရရှိလာတဲ့ သင်ခန်းစာတွေကို ဒီနေရာမှာ မှတ်တမ်းတင်ထားပါတယ်။
+              ကျွန်တော့်အတွက် နည်းပညာဆိုတာ အသုံးချဖို့အတွက်သာမက ပြဿနာတွေကို ပိုမိုကောင်းမွန်တဲ့နည်းလမ်းနဲ့ ဖြေရှင်းဖို့ အသုံးချနိုင်တဲ့ ကိရိယာတစ်ခုပါ။
+              Website, AI, electronics, automation နှင့် digital services တွေကို လေ့လာ၊ စမ်းသပ်၊ တည်ဆောက်ရင်း ရရှိလာတဲ့ လက်တွေ့အသိပညာတွေကို SXOPOP မှာ မျှဝေထားပါတယ်။
             </p>
-            <Link to="/about" className="text-link">More about Aung Bo Bo Kyaw <span>↗</span></Link>
+            <Link to="/about" className="text-link">Discover my story <span>↗</span></Link>
           </div>
         </div>
       </section>
 
       <section className="section-shell category-section">
         <div className="section-heading reveal">
-          <div><div className="section-kicker">02 / Explore</div><h2>What I work on.</h2></div>
-          <p>Ideas, experiments and practical knowledge.</p>
+          <div><div className="section-kicker">02 / Focus</div><h2>What I build and explore.</h2></div>
+          <p>Practical technology, thoughtful learning and real-world experiments.</p>
         </div>
         <div className="category-list">
           {CATEGORIES.map(category => (
@@ -138,13 +138,13 @@ export default function Home() {
       <section className="posts-section">
         <div className="section-shell">
           <div className="section-heading reveal">
-            <div><div className="section-kicker">03 / Journal</div><h2>Latest thoughts.</h2></div>
+            <div><div className="section-kicker">03 / Journal</div><h2>Notes from the work.</h2></div>
             <Link to="/blog" className="text-link">View all posts <span>→</span></Link>
           </div>
           {loadingPosts ? (
-            <div className="empty-posts">Loading the latest posts…</div>
+            <div className="empty-posts">Loading the latest notes…</div>
           ) : posts.length === 0 ? (
-            <div className="empty-posts">No published posts yet. The journal is getting ready.</div>
+            <div className="empty-posts">The journal is being prepared. New posts will appear here soon.</div>
           ) : (
             <div className="post-list">
               {posts.map((post, index) => (
@@ -165,7 +165,7 @@ export default function Home() {
 
       <section className="section-shell cta-section">
         <div className="cta-inner reveal">
-          <div><div className="section-kicker">04 / Connect</div><h2>Let’s build something useful.</h2><p>Ideas become valuable when they are made real.</p></div>
+          <div><div className="section-kicker">04 / Connect</div><h2>Let’s create something meaningful.</h2><p>Have an idea, a project or a problem worth solving? Let’s talk.</p></div>
           <Link to="/contact" className="circle-cta">Get in touch <span>↗</span></Link>
         </div>
       </section>
