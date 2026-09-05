@@ -32,7 +32,7 @@ export default function Navbar({ session, onSignOut }) {
       <div ref={menuRef} className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="nav-inner">
           <Link to="/" className="nav-brand">
-            <img src="/assets/profile.webp" alt="Aung Bo Bo Kyaw" className="nav-profile" />
+            <img src="/assets/profile.png" alt="Aung Bo Bo Kyaw" className="nav-profile" />
             <div className="nav-brand-copy">
               <div className="nav-name">Aung Bo Bo Kyaw</div>
               <div className="nav-tagline">SXOPOP · Intelligent Hub</div>
