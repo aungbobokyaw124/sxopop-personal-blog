@@ -357,4 +357,4 @@ export default function Home() {
               padding: '14px 28px', borderRadius: 12, fontWeight: 700, fontSize: 15,
               textDecoration: 'none', color: '#E2E8F0',
               border: '1px solid rgba(255,255,255,0.15)',
-              background: 'rgba(255,255,255
+              background: 'rgba(255,255,255,0.08)',
