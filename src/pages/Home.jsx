@@ -353,16 +353,18 @@ export default function Home() {
               background: 'linear-gradient(135deg, #0EA5E9, #10B981)',
               boxShadow: '0 0 30px rgba(14,165,233,0.3)',
             }}>View Courses</Link>
-            <Link to="/pricing" style={{
-              padding: '14px 28px', borderRadius: 12, fontWeight: 700, fontSize: 15,
-              textDecoration: 'none', color: '#E2E8F0',
-              border: '1px solid rgba(255,255,255,0.15)',
-              background: 'rgba(255,255,255,0.05)',
-            }}>Pricing</Link>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  )
-      }
+            <Link
+  href="/pricing"
+  style={{
+    padding: '14px 28px',
+    borderRadius: 12,
+    fontWeight: 700,
+    fontSize: 15,
+    textDecoration: 'none',
+    color: '#E2E8F0',
+    border: '1px solid rgba(255,255,255,0.15)',
+    background: 'rgba(255,255,255,0.05)',
+  }}
+>
+  Pricing
+</Link>
