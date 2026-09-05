@@ -19,7 +19,7 @@ function PrivateRoute({ session, children }) {
 }
 
 function Layout({ session, onSignOut, children }) {
-  return <div className="min-h-screen" style={{ background: '#020817', color: '#E2E8F0' }}><Navbar session={session} onSignOut={onSignOut} /><main>{children}</main><Footer /></div>
+  return <div className="min-h-screen" style={{ background: '#000', color: '#E4E4E7' }}><Navbar session={session} onSignOut={onSignOut} /><main>{children}</main><Footer /></div>
 }
 
 export default function App() {
@@ -53,7 +53,7 @@ export default function App() {
   const handlePreloaderDone = useCallback(() => setPreloaderDone(true), [])
 
   useEffect(() => {
-    const timer = setTimeout(() => setPreloaderDone(true), 4500)
+    const timer = setTimeout(() => setPreloaderDone(true), 4000)
     return () => clearTimeout(timer)
   }, [])
 
