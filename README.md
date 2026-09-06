@@ -1,5 +1,4 @@
-# SXOPOP Personal Blog
-
+# Aung Bo Bo Kyaw
 SXOPOP Intelligent Hub — ဉာဏ်ရည်ထက်မြက်သော ဗဟိုစနစ်.
 
 A responsive personal blog built with React, Vite, Tailwind CSS, React Router and Supabase.
